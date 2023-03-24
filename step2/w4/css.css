@@ -1,0 +1,22 @@
+body {
+  text-align: center;
+}
+.parent {
+  padding: 16px;
+  background-color: antiquewhite;
+}
+
+.child {
+  padding: 16px;
+  background-color: azure;
+}
+
+.thisisclassmain {
+  padding: 8px;
+  background-color: burlywood;
+}
+
+.Friend {
+  margin: 16px;
+  background-color: cadetblue;
+}
