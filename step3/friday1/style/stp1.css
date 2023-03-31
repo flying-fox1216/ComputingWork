@@ -1,0 +1,32 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.navBar {
+  padding: 8px 24px;
+  color: white;
+  min-height: 10px;
+  background-color: gray;
+  display: flex;
+  /* flex-direction: column; */
+  flex-direction: row;
+  justify-content: space-between;
+  /* 균등하게 정렬 */
+  align-items: center;
+  font-family: "Black Han Sans", sans-serif;
+}
+
+.navBar__Buttons {
+  display: flex;
+  gap: 16px;
+}
+
+.navBar__Button > a {
+  color: white;
+  text-decoration: none;
+}
+
+.navBar__logo {
+  height: 36px;
+}
