@@ -1,0 +1,55 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1248px;
+  margin-inline: auto;
+  padding-inline: 24px;
+}
+
+.wrapper {
+  padding-block: 64px;
+}
+
+.nav {
+  background-color: black;
+  font-weight: 700;
+}
+.nav .wrapper {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  padding-block: 12px;
+  color: white;
+}
+.nav__menuWrap {
+  display: flex;
+  gap: 24px;
+  align-items: baseline;
+}
+
+.button {
+  background-color: slateblue;
+  padding: 8px 16px;
+  border-radius: 8px;
+  color: white;
+  font-weight: 700;
+  text-align: center;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.button--type--text {
+  background-color: unset;
+  color: slateblue;
+  padding-inline: unset;
+}
+
+/* 
+  #main1 .wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  } *//*# sourceMappingURL=css4.css.map */
