@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1248px;
+  margin-inline: auto;
+  padding-inline: 24px;
+}
+
+.wrapper {
+  padding-block: 64px;
+}
+
+.button {
+  background-color: cornflowerblue;
+  padding: 8px 16px;
+  border-radius: 8px;
+  color: white;
+  font-weight: 700;
+  text-align: center;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.button--type--text {
+  background-color: unset;
+  color: cornflowerblue;
+  padding-inline: unset;
+}
+
+.nav {
+  background-color: black;
+  font-weight: 700;
+}
+.nav .wrapper {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  padding-block: 12px;
+  color: white;
+}
+.nav__menuWrap {
+  display: flex;
+  gap: 24px;
+  align-items: baseline;
+}
+
+.main__media {
+  background-color: antiquewhite;
+  overflow: hidden;
+}
+.main__media img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#main1 {
+  text-align: center;
+}
+#main1 .button {
+  margin-inline: auto;
+}
+#main1 .main__text {
+  margin-inline: auto;
+  margin-bottom: 24px;
+  max-width: 600px;
+}
+#main1 .main__media {
+  aspect-ratio: 16/9;
+}
+#main1 h2 {
+  margin-bottom: 16px;
+}
+#main1 p {
+  margin-bottom: 24px;
+}
+
+#main2 .wrapper {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+#main2 .wrapper > * {
+  flex: 1;
+}
+#main2 .main__media {
+  aspect-ratio: 4/3;
+}
+#main2 .main__text__btWrap {
+  display: flex;
+  gap: 24px;
+}
+#main2 h2 {
+  margin-bottom: 16px;
+}
+#main2 p {
+  max-width: 40ch;
+  margin-bottom: 24px;
+}
+
+.footer {
+  background-color: gray;
+  color: white;
+  font-size: 0.875rem;
+}
+.footer a {
+  text-decoration: none;
+  color: white;
+  list-style: none;
+}
+.footer svg {
+  fill: white;
+}
+.footer .wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  gap: 1.5rem;
+}
+.footer h2 {
+  margin-top: 4px;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+.footer li {
+  margin-bottom: 0.5rem;
+}
+.footer__logo {
+  margin-bottom: 0.75rem;
+}
+.footer__extLinkWrap {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}/*# sourceMappingURL=css1.css.map */
