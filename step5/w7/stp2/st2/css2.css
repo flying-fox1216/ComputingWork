@@ -114,6 +114,24 @@
   max-width: 40ch;
   margin-bottom: 24px;
 }
+@media (width < 53.125rem) {
+  #main2 .wrapper {
+    display: block;
+    text-align: center;
+  }
+  #main2 .wrapper p {
+    margin-inline: auto;
+  }
+  #main2 .main__text {
+    margin-bottom: 2.25rem;
+  }
+  #main2 .main__text__btWrap {
+    margin-inline: auto;
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+  }
+}
 
 .footer {
   background-color: gray;
