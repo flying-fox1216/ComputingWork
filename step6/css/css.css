@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1248px;
+  margin-inline: auto;
+  padding-inline: 24px;
+}
+
+.wrapper {
+  padding-block: 64px;
+}
+
+.button {
+  background-color: rgb(88, 20, 152);
+  color: violet;
+  padding: 16px 24px;
+  border-radius: 8px;
+  text-align: center;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.nav {
+  background-color: blueviolet;
+  color: rgb(246, 209, 246);
+  font-weight: 700;
+}
+.nav .wrapper {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  padding-block: 15px;
+}
+.nav__logo {
+  font-size: 25px;
+}
+.nav__menus {
+  display: flex;
+  gap: 1.875rem;
+  align-items: baseline;
+}
+.nav .mobile {
+  display: none;
+}
+@media (width < 1100px) {
+  .nav .wrapper {
+    font-size: 12px;
+  }
+}
+@media (width < 920px) {
+  .nav .wrapper {
+    font-size: 10px;
+    gap: 16px;
+    font-weight: 700;
+  }
+  .nav .wrapper .nav__menus {
+    gap: 15px;
+  }
+}
+@media (width < 800px) {
+  .nav .wrapper {
+    font-size: unset;
+  }
+  .nav .mobile {
+    display: unset;
+  }
+  .nav__menus {
+    display: none;
+  }
+  .nav .m_menu {
+    color: violet;
+  }
+}
+
+#search {
+  max-width: 1248px;
+  margin-inline: auto;
+  padding-inline: 24px;
+}
+#search .wrapper {
+  display: flex;
+  gap: 24px;
+  align-items: baseline;
+  padding-block: 32px;
+}
+#search input {
+  width: 90%;
+  border: solid rgb(88, 20, 152) 1.5px;
+  border-radius: 8px;
+  padding: 10px 13px;
+  margin-inline: auto;
+}
+#search .search__button {
+  background-color: rgb(88, 20, 152);
+  color: violet;
+  padding: 1% 2%;
+  align-items: center;
+  border-radius: 8px;
+  margin-inline: auto;
+  font-weight: 600;
+  text-align: center;
+}
+
+#main1 h2 {
+  margin-bottom: 24px;
+}
+#main1 .main__images {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 16px;
+}
+@media (width < 1100px) {
+  #main1 .main__images {
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 16px;
+  }
+}
+@media (width < 900px) {
+  #main1 .main__images {
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+  }
+}
+@media (width < 600px) {
+  #main1 .main__images {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+}/*# sourceMappingURL=css.css.map */
