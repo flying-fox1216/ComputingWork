@@ -29,6 +29,10 @@
   color: rgb(246, 209, 246);
   font-weight: 700;
 }
+.nav a {
+  color: rgb(246, 209, 246);
+  text-decoration: none;
+}
 .nav .wrapper {
   display: flex;
   align-items: baseline;
@@ -43,8 +47,12 @@
   gap: 1.875rem;
   align-items: baseline;
 }
+.nav__menus span {
+  color: rgb(234, 192, 234);
+}
 .nav .mobile {
   display: none;
+  text-align: right;
 }
 @media (width < 1100px) {
   .nav .wrapper {
@@ -53,12 +61,11 @@
 }
 @media (width < 920px) {
   .nav .wrapper {
-    font-size: 10px;
     gap: 16px;
     font-weight: 700;
   }
   .nav .wrapper .nav__menus {
-    gap: 15px;
+    gap: 10px;
   }
 }
 @media (width < 800px) {
@@ -76,6 +83,69 @@
   }
 }
 
+.m_menu {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.dropdown {
+  display: none;
+  z-index: 1;
+  font-size: 13px;
+}
+.dropdown .dropbt {
+  text-align: right;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin-top: 20px;
+}
+.dropdown .es {
+  color: white;
+}
+.dropdown .bt {
+  color: white;
+  background-color: rgb(88, 20, 152);
+  padding: 8px 8px;
+  border-radius: 4px;
+}
+
+.dropdown a {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.mobile:hover .dropdown {
+  display: block;
+}
+
+.anima {
+  color: #000;
+  font-weight: 700;
+  animation: anima 3s infinite;
+}
+
+@keyframes anima {
+  15% {
+    color: red;
+  }
+  30% {
+    color: orange;
+  }
+  45% {
+    color: goldenrod;
+  }
+  60% {
+    color: green;
+  }
+  75% {
+    color: blue;
+  }
+  80% {
+    color: purple;
+  }
+}
 #search {
   max-width: 1248px;
   margin-inline: auto;
@@ -88,30 +158,50 @@
   padding-block: 32px;
 }
 #search input {
-  width: 90%;
+  width: 85%;
   border: solid rgb(88, 20, 152) 1.5px;
   border-radius: 8px;
   padding: 10px 13px;
   margin-inline: auto;
 }
+#search a {
+  color: violet;
+  text-decoration: none;
+}
 #search .search__button {
+  width: 10%;
   background-color: rgb(88, 20, 152);
   color: violet;
-  padding: 1% 2%;
-  align-items: center;
+  padding: 10px 2%;
   border-radius: 8px;
-  margin-inline: auto;
   font-weight: 600;
   text-align: center;
 }
+@media (width < 620px) {
+  #search .search__button {
+    font-size: 12px;
+  }
+}
 
-#main1 h2 {
+h2 {
+  margin-bottom: 32px;
+}
+
+p {
   margin-bottom: 24px;
 }
+
 #main1 .main__images {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 16px;
+  margin-bottom: 24px;
+}
+#main1 .main__images img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  border: rgb(88, 20, 152) 2px solid;
+  border-radius: 8px;
 }
 @media (width < 1100px) {
   #main1 .main__images {
@@ -126,8 +216,90 @@
   }
 }
 @media (width < 600px) {
-  #main1 .main__images {
+  #main1 .wrapper {
+    text-align: center;
+  }
+  #main1 .wrapper .main__images {
     grid-template-columns: 1fr;
     gap: 16px;
   }
+}
+
+#design .wrapper {
+  display: flex;
+  gap: 30px;
+}
+#design .wrapper > * {
+  flex: 1;
+}
+#design .wrapper .main_image {
+  background-color: aqua;
+  aspect-ratio: 3/2;
+  overflow: hidden;
+}
+#design .wrapper .main_image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media (width < 800px) {
+  #design .wrapper {
+    display: block;
+  }
+  #design .wrapper .main_image {
+    background-color: aqua;
+    aspect-ratio: 2/1;
+  }
+}
+
+.footer {
+  background-color: thistle;
+  color: darkmagenta;
+  font-size: 14px;
+}
+.footer a {
+  text-decoration: none;
+  color: darkmagenta;
+  list-style: none;
+}
+.footer .wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 24px;
+}
+.footer .column {
+  margin-bottom: 32px;
+  margin-inline: auto;
+}
+.footer h2 {
+  margin-top: 5px;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+.footer li {
+  margin-bottom: 3px;
+  margin-left: 10px;
+}
+@media (width < 850px) {
+  .footer .wrapper {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.line {
+  text-decoration: line-through;
+}
+
+.italic {
+  font-style: italic;
+  font-size: 25px;
+  font-weight: 700;
+}
+
+#main2 {
+  text-align: center;
+}
+#main2 p {
+  line-height: 30px;
 }/*# sourceMappingURL=css.css.map */
