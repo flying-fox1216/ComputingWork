@@ -41,6 +41,7 @@
 }
 .nav__logo {
   font-size: 25px;
+  white-space: nowrap;
 }
 .nav__menus {
   display: flex;
