@@ -46,6 +46,7 @@
   display: flex;
   gap: 1.875rem;
   align-items: baseline;
+  white-space: nowrap;
 }
 .nav__menus span {
   color: rgb(234, 192, 234);
@@ -177,16 +178,26 @@
   text-decoration: none;
 }
 #search .search__button {
-  width: 10%;
+  width: 100px;
   background-color: rgb(88, 20, 152);
   color: violet;
   padding: 10px 2%;
   border-radius: 8px;
   font-weight: 600;
   text-align: center;
+  white-space: nowrap;
 }
-@media (width < 620px) {
+@media (width < 650px) {
   #search .search__button {
+    width: 70px;
+    font-size: 12px;
+    white-space: nowrap;
+  }
+}
+@media (width < 430px) {
+  #search .search__button {
+    width: 50px;
+    white-space: nowrap;
     font-size: 12px;
   }
 }

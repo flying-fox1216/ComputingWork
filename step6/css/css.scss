@@ -48,6 +48,7 @@
     display: flex;
     gap: 1.875rem;
     align-items: baseline;
+    white-space: nowrap;
     span {
       color: rgb(234, 192, 234);
     }
@@ -194,7 +195,7 @@
     text-decoration: none;
   }
   .search__button {
-    width: 10%;
+    width: 100px;
     background-color: rgb(88, 20, 152);
     color: violet;
     padding: 10px 2%;
@@ -203,13 +204,29 @@
     // margin-inline: 10px;
     font-weight: 600;
     text-align: center;
+    white-space: nowrap;
   }
-  @media (width < 620px) {
+  @media (width < 650px) {
     // input {
     //   padding: 20px 13px;
     // }
     .search__button {
+      width: 70px;
       // padding: 10px 10px;
+      font-size: 12px;
+      white-space: nowrap;
+    }
+  }
+  @media (width < 430px) {
+    // input {
+    //   padding: 15px 13px;
+    // }
+    .search__button {
+      width: 50px;
+      white-space: nowrap;
+      // padding-inline: 7.5px 15px;
+      // padding-block: 8px;
+      // text-align: center;
       font-size: 12px;
     }
   }
