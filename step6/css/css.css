@@ -120,6 +120,14 @@
   display: block;
 }
 
+.mobile:hover {
+  height: 200px;
+}
+
+.over:hover {
+  font-size: 18px;
+}
+
 .anima {
   color: #000;
   font-weight: 700;
