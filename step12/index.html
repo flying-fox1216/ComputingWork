@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      .noise-effect span {
+        display: inline-block;
+        position: relative;
+      }
+
+      .noise-effect span:before {
+        content: attr(data-text);
+        position: absolute;
+        top: 0;
+        left: 0;
+        color: transparent;
+        text-shadow: 0 0 5px #fff;
+        animation: noise 2s infinite linear alternate-reverse;
+      }
+
+      @keyframes noise {
+        0% {
+          text-shadow: 0 0 5px #fff;
+        }
+        25% {
+          text-shadow: 0 0 15px #fff;
+        }
+        50% {
+          text-shadow: 0 0 5px #fff;
+        }
+        75% {
+          text-shadow: 0 0 15px #fff;
+        }
+        100% {
+          text-shadow: 0 0 5px #fff;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="noise-effect">
+      <span data-text="첫 번째">첫 번째</span>
+      <span data-text="두 번째">두 번째</span>
+      <span data-text="세 번째">세 번째</span>
+    </div>
+  </body>
+</html>
